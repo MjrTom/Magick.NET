@@ -423,8 +423,8 @@ jobs:
       - name: Sign NuGet package
         run: sign code trusted-signing `
           --trusted-signing-account ImageMagick `
-          --trusted-signing-certificate-profile ImageMagick `
-          --trusted-signing-endpoint https://eus.codesigning.azure.net `
+          --trusted-signing-certificate-profile ImageMagick2028 `
+          --trusted-signing-endpoint https://wus2.codesigning.azure.net `
           --azure-credential-type azure-cli `
           --verbosity information `
           *.nupkg
